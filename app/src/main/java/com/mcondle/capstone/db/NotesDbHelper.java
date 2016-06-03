@@ -37,7 +37,7 @@ public class NotesDbHelper extends SQLiteOpenHelper {
                 // per location, it's created a UNIQUE constraint with REPLACE strategy
                 " UNIQUE (" + NotesEntry.COLUMN_NOTE_TITLE+ ") ON CONFLICT REPLACE);";
 
-        db.execSQL(SQL_CREATE_NOTES_TABLE)git;
+        db.execSQL(SQL_CREATE_NOTES_TABLE);
     }
 
     @Override
